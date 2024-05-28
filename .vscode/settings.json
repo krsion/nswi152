@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "WebApplication1.sln"
+    "dotnet.defaultSolution": "WebApplication1.sln",
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "WebApplication1/bin/Release/net8.0/publish",
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/f16270f6-66c6-427c-97c2-a73cbc0bf67f/resourceGroups/NSWI152/providers/Microsoft.Web/sites/OndraKrsickaWebApp"
 }
