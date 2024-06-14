@@ -28,7 +28,7 @@ catch (Exception e)
     Console.WriteLine(e.Message);
 }
 
-app.MapGet("/Person", () => {
+app.MapGet("/", () => {
     var html = new StringBuilder("<html><body><table border=1>");
 
     using var conn = new SqlConnection(connectionString);
@@ -50,7 +50,7 @@ app.MapGet("/Person", () => {
     return Results.Content(html.ToString(), "text/html");
 });
 
-app.MapPost("/Person", (Person person) => {
+app.MapPost("/Perso", (Person person) => {
     using var conn = new SqlConnection(connectionString);
     conn.Open();
 
