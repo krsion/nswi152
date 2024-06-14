@@ -50,7 +50,7 @@ app.MapGet("/", () => {
     return Results.Content(html.ToString(), "text/html");
 });
 
-app.MapPost("/Perso", (Person person) => {
+app.MapPost("/", (Person person) => {
     using var conn = new SqlConnection(connectionString);
     conn.Open();
 
